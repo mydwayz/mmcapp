@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:overScrollMode="never"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/request_service_fname_floatingtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            app:hintTextAppearance="@style/TextInputLayoutTheme">
+
+            <EditText
+                android:id="@+id/request_service_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:drawableBottom="@drawable/ic_divider"
+                android:drawablePadding="5dp"
+                android:hint="@string/service_request_fullname"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/request_service_subject_floatingtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            app:hintTextAppearance="@style/TextInputLayoutTheme">
+
+            <EditText
+                android:id="@+id/request_service_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:drawableBottom="@drawable/ic_divider"
+                android:drawablePadding="5dp"
+                android:hint="@string/service_request_subject"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/request_service_type_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_request_required"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/request_service_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/ic_divider"
+                android:entries="@array/service_request_types"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/request_service_time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_request_required"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/request_service_time_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/ic_divider"
+                android:entries="@array/period"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/request_service_cd_floatingtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            app:hintTextAppearance="@style/TextInputLayoutTheme">
+
+            <EditText
+                android:id="@+id/request_service_cd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:drawableBottom="@drawable/ic_divider"
+                android:drawablePadding="5dp"
+                android:hint="@string/service_request_noofcds"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/request_service_contact_floatingtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            app:hintTextAppearance="@style/TextInputLayoutTheme">
+
+            <EditText
+                android:id="@+id/request_service_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:drawableBottom="@drawable/ic_divider"
+                android:drawablePadding="5dp"
+                android:hint="@string/service_request_contact_number"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/request_service_email_floatingtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            app:hintTextAppearance="@style/TextInputLayoutTheme">
+
+            <EditText
+                android:id="@+id/request_service_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:drawableBottom="@drawable/ic_divider"
+                android:drawablePadding="5dp"
+                android:hint="@string/service_request_email_id"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/service_request_urgent"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="20dp"
+                    android:button="@drawable/radiobtn_service_request"
+                    android:checked="true"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobtn_service_request"
+                    android:text="No" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/request_service_message_floatingtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5_dp"
+            app:hintTextAppearance="@style/TextInputLayoutTheme">
+
+            <EditText
+                android:id="@+id/request_service_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_150_dp"
+                android:background="@drawable/color_border"
+                android:hint="@string/service_request_msg_comment_note"
+                android:inputType="textMultiLine"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" android:layout_marginTop="@dimen/px_5_dp">
+
+            <Button
+                android:id="@+id/service_request_submit"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/service_request_submit"
+                android:onClick="serviceOnClick"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/service_request_reset"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/darker_gray"
+                android:text="@string/service_request_reset"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

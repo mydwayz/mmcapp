@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">MahageetaMusic</string>
+    <string name="title">Mahageeta Music App</string><string name="copyright">\u00A9 2015 Mahageeta Music Company \n All rights reserved</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="login_title">Login</string>
+    <string name="signup_title">Signup</string>
+    <string name="login_pwd">Password</string>
+    <string name="login_username">Email/Mobile Number</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="login_checkbox">Remember Me</string>
+    <string name="login_btn_string">Login</string>
+    <string name="forgotpwd_string">Forgot Password?</string>
+    <string name="new_signup_string">Don\'t have an account? <font size='20'><b><u>Sign Up</u></b></font></string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="forgot_stmt_string">Please enter your registered Email ID</string>
+    <string name="forgot_already_string">Already have an account? <font size='20'><b><u>Login</u></b></font></string>
+    <string name="forgot_send_btn_string">Send</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="emailid">Email ID</string>
+    <string name="password">Password</string>
+    <string name="confirmpwd">Confirm Password</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pincode</string>
+    <string name="phone">Phone</string>
+
+    <!-- Dialog Strings -->
+
+    <!-- Login Screen Errors String-->
+    <string name="error_login_enter_details">Please enter login details.</string>
+    <string name="error_login_enter_username">Please enter Username</string>
+    <string name="error_login_enter_password">Please enter Password</string>
+    <string name="category">Category</string>
+    <string name="cart">My Cart</string>
+    <string name="services">Services</string>
+    <string name="help">Help</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="request_service">Request for Quotation</string>
+    <string-array name="nav_drawer_items">
+        <item>Category</item>
+        <item>My Cart</item>
+        <item>Services</item>
+        <item>Help</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/category_selector</item>
+        <item>@drawable/mycart_selector</item>
+        <item>@drawable/services_selector</item>
+        <item>@drawable/help_selector</item>
+        <item>@drawable/aboutus_selector</item>
+        <item>@drawable/contactus_selector</item>
+    </array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="service_request_fullname">Full Name</string>
+    <string name="service_request_subject">Subject</string>
+    <string name="service_request_noofcds">No.of CD\'s</string>
+    <string name="service_request_contact_number">Contact Number</string>
+    <string name="service_request_email_id">Email Id</string>
+    <string name="service_request_msg_comment_note">Enter your comment</string>
+    <string name="service_request_urgent">Urgent</string>
+    <string name="service_request_required">Service Required</string>
+    <string name="service_request_submit">Submit</string>
+    <string name="service_request_reset">Reset</string>
+    <string name="contact_feedback_text">FeedBack / Enquiry</string>
+    <string-array name="service_request_types">
+        <item>Service Required</item>
+        <item>Duplicate</item>
+        <item>Cd Printing/Stickering</item>
+    </string-array>
+    <string-array name="period">
+        <item>24 hours</item>
+        <item>48 hours</item>
+        <item>1 week</item>
+        <item>2 weeks</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rupees">INR %1$s</string>
+</resources>

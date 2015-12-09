@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/px_24_dp"
+    tools:context="com.mahageetamusic.fragments.ContactUs">
+
+    <TextView
+        android:id="@+id/contactus_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/app_name" />
+
+    <Button
+        android:id="@+id/feedbackBtn"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0" android:padding="10dp"
+        android:text="@string/contact_feedback_text"
+        android:textAllCaps="false" />
+
+</LinearLayout>

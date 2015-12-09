@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="2dp"
+        android:button="@drawable/album_song_selector"
+        android:checked="false" />
+
+    <CheckBox
+        android:id="@+id/add2cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/player"
+        android:button="@drawable/album_cart_selector"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/add2cart"
+        android:text="@string/rupees"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/currency"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+</RelativeLayout>
